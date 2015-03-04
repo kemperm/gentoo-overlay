@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE repositories SYSTEM "/dtd/repositories.dtd">
+<repositories xmlns="" version="1.0">
+	<repo quality="experimental" status="unofficial">
+		<name>kemperm</name>
+		<description lang="en">Personal Gentoo Overlay from kemperm.</description>
+		<homepage>https://github.com/kemperm/gentoo-overlay</homepage>
+		<owner type="person">
+			<name>kemperm</name>
+		</owner>
+		<source type="git">git://github.com/kemperm/gentoo-overlay.git</source>
+		<source type="git">https://github.com/kemperm/gentoo-overlay.git</source>
+	</repo>
+</repositories>
+
