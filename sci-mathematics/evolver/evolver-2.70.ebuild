@@ -71,13 +71,13 @@ src_install() {
 	if use doc ; then
 		dohtml -A txt,fe -r doc/*
 		dodoc manual270.pdf
-		EVOLVERPATH+="/usr/share/doc/${PF}/html"
+		EVOLVERPATH+="/usr/share/doc/${PF}/html:"
 	fi
 	if use examples ; then
 		docinto examples
 		docompress -x /usr/share/doc/${PF}/examples
 		dodoc -r fe/*
-		EVOLVERPATH+=":/usr/share/doc/${PF}/examples"
+		EVOLVERPATH+="/usr/share/doc/${PF}/examples"
 	fi
 	if [[ ! -z "${EVOLVERPATH}" ]] ; then
 		echo "EVOLVERPATH=${EVOLVERPATH}" > "${T}/90${PN}"
